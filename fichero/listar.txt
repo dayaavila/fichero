@@ -1,0 +1,13 @@
+﻿
+Google;MAR;PEDRO;12345678E;65845415;admin@gmail.com;Química
+Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
+Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
+Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
+Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
