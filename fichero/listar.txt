@@ -1,5 +1,4 @@
-﻿
-Google;MAR;PEDRO;12345678E;65845415;admin@gmail.com;Química
+﻿Google;MAR;PEDRO;12345678E;65845415;admin@gmail.com;Química
 Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
 Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
 Goo;BCN;Maria;12345678Z;987225565;admin@gmail.com;Informática
@@ -11,3 +10,13 @@ adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
 adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
 adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
 adidas;bordeta;juan;12345678H;9874563212;juan@gmail.com;Informática
+;;;;;;Informática
+;;;;;;Informática
+;;;;;;Informática
+;;;;;;Informática
+;;;;;;Informática
+aas;ss;;;;;Informática
+asd;adasd;asd;asd;666666666;asd@asd.com;Informática
+asd;adasd;asd;asd;666666666;asd@asd.com;Informática
+jhkj;dfes;daya;;666666666;dayaavila87@gmail.com;Informática
+jhkj;dfes;daya;22;666666666;dayaavila87@gmail.com;Informática

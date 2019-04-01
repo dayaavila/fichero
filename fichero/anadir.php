@@ -5,10 +5,10 @@
 
 <!DOCTYPE html>
 <html lang="es">
-<script src="validacion.js"></script>
+<script src="js/validacion.js"></script>
 <body>
 	<div>
-		<form action="listar.php" method="POST" onsubmit="return validacion()">
+		<form action="anadir.php" method="POST" onsubmit="return validacion()">
 			<h1>Inserta!</h1>
 			<label>Introduce el nombre de la empresa: </label>
 			<input type="text" name="empresa" id="empresa" placeholder="Google"><br>
@@ -43,5 +43,25 @@
 			<input type="submit" value="Insertar" name="insertar" id="insertar"> 
 		</form>
 	</div>
+	<?php 
+	//verifico que venga del fichero con isset
+		if(isset($_POST["insertar"]))
+		{
+			//obtengo los datos ingresados con super global $_POST 
+			$empresa = $_POST["empresa"];
+			$direccion = $_POST["direccion"];
+		    $nombre = $_POST["nombre"];
+		    $dni = $_POST["dni"];
+			$tlf = $_POST["tlf"];
+		    $email = $_POST["email"];
+		    $tamano = $_POST["tamano"];
+		    //abro la carpeta e indico que hará, en este caso con a añade
+		    $canal = fopen("listar.txt", "a");
+		    // fwrite escribe y PHP_EOL me indica el salto de linea
+			fwrite($canal, PHP_EOL.$empresa.";".$direccion.";".$nombre.";".$dni.";".$tlf.";".$email.";".$tamano);
+			fclose($canal);
+		}
+	?>
 </body>
 </html>
+

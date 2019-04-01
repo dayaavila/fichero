@@ -1,50 +1,47 @@
-<?php 
+<?php
 	session_start();
 	require_once "template/menu.php"; 
 ?>
 
+<!DOCTYPE html>
+<html lang="es">
+<body>
+	<form action="anadir.php" method="$_POST">
+		<table border="1px solid black">
+			<tr>
+				<th>Empresa</th>
+				<th>Dirección</th>
+				<th>Nombre</th>
+				<th>DNI</th>
+				<th>Teléfono</th>
+				<th>E-mail</th>
+				<th>Rama</th>
+			</tr>
 <?php
-	
-	if(isset($_POST["insertar"]))
+	//aqui mostrare el fichero en la vista listar
+	$canal = fopen("listar.txt", "r");
+	//Comprueba si el puntero a un archivo está al final del archivo
+	while(!feof($canal))
 	{
-		$empresa = $_POST["empresa"];
-		$direccion = $_POST["direccion"];
-        $nombre = $_POST["nombre"];
-        $dni = $_POST["dni"];
-		$tlf = $_POST["tlf"];
-        $email = $_POST["email"];
-        $tamano = $_POST["tamano"];
+		//Obtiene una línea desde el puntero a un fichero
+		$line = fgets($canal);
+		$partes = explode(";", $line);
+		echo "<tr>";
 		
-		echo "<html><body><table border=1 align='center'>";
-		echo "<tr><th>Empresa</th><th>Direccion</th><th>Nombre</th><th>DNI</th><th>Teléfono</th><th>Email</th><th>Sector</th></tr>";
-
-		$listar = PHP_EOL.$empresa.";".$direccion.";".$nombre.";".$dni.";".$tlf.";".$email.";".$tamano;
-		$canal = fopen("listar.txt", "a");
-		fputs($canal, $listar);
-
-
-		
-		// for ($i=0; $i < count($listar); $i++) 
-		// {
-			// echo $lineas[i]."<br>";
-			echo "<tr><td>".$empresa."</td><td>".$direccion."</td><td>".$nombre."</td><td>".$dni."</td><td>"
-			.$tlf."</td><td>".$email."</td><td>".$tamano."</td></tr>";	
-		// }	
-		echo "</table></body></html>";
-	}
-
-	fclose($canal);
-?>
-
-
-
-
-
-
-
-
-
-<!-- for ($i=0; $i < count($listar); $i++) 
+		foreach ($partes as $value) 
 		{
-			echo $lineas[i]."<br>";
-		 } -->
+			echo "<td>".$value."</td>";	
+		}
+		echo "</tr>";
+	}
+?>
+		</table>
+	</form>
+</body>
+</html>
+
+
+	
+
+
+

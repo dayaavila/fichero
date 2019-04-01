@@ -3,7 +3,7 @@ function validacion()
 	var empresa = document.getElementById("empresa").value;
 	var direccion = document.getElementById("direccion").value;
 	var nombre = document.getElementById("nombre").value;
-	var dni = document.getElementById("dni").value;
+	// var dni = document.getElementById("dni").value;
 	var tlf = document.getElementById("tlf").value;
 	var email = document.getElementById("email").value;
 	var sector = document.getElementsByName("tamano");
@@ -12,18 +12,16 @@ function validacion()
 	var isValidEmpresa = this.isValidEmpresa(empresa);
 	var isValidDireccion = this.isValidDireccion(direccion);
 	var isValidNombre = this.isValidNombre(nombre);
-	var isValidDni = this.isValidDni(dni);
+	// var isValidDni = this.isValidDni(dni);
 	var isValidTlf = this.isValidTlf(tlf);
 	var isValidEmail = this.isValidEmail(email);
-	var isValidRadio = this.isValidRadio(sector);
 
 	if (isValidEmpresa === true &&
 		isValidDireccion === true && 
 		isValidNombre === true &&
-		isValidDni === true &&
+		// isValidDni === true &&
 		isValidTlf === true &&
-		isValidEmail === true &&
-		isValidRadio === true)
+		isValidEmail === true)
 	{
 		return true;
 	}
